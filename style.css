@@ -141,7 +141,10 @@ footer {
     justify-content: space-between;
     gap: 5px;
 }
-
+.footer-container p {
+    font-size:20px;
+}
+    
 .footer-about,
 .footer-social,
 .footer-map {
