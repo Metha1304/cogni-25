@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitron'25 Events</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">   
+<script src="https://kit.fontawesome.com/fe21925bac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="Anna university _logo.png" class="logo" alt="University Logo">
+            <div class="header-text">
+                <h1>UNIVERSITY COLLEGE OF ENGINEERING</h1>
+                <h1>ANNA UNIVERSITY</h1>
+                <h4>ARIYALUR - 621 731</h4>
+                <p>Vilangudi (Trichy - Chidambaram NH81)</p>
+            </div>
+            <img src="small logo.jpg" class="logo" alt="Small Logo">
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <a href="index.html"><li>Home</li></a>
+            <a href="event.html"><li>Events</li></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKJszy25dMJvxzDX2cuJQ4KGYAN-KElMxEx4oCOKV3LLbYvw/viewform?usp=dialog"><li>Register</li></a>
+            
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+
+    <div class="container">
+        <h1>Events</h1>
+        <div class="buttons">
+            <button onclick="showEvents('all')">All Events</button>
+            <button onclick="showEvents('tech')">Tech Events</button>
+            <button onclick="showEvents('nontech')">Non-Tech Events</button>
+        </div>
+
+        <div id="events">
+            <div id="all-events" class="event-div">
+                <h2>All Events</h2>
+                <ul>
+                    
+                    <li>
+                        
+                        <h3>Paper Presentation</h3>
+                        <p>  A competition of technical papers </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                    </li>
+                    <li><h3>TechExpo</h3>
+                        <p>  A competition of Prototypes </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Room.no - 212</p>
+
+                       
+                    <li>
+                       
+                        <h3>Quiz-O-Mania</h3>
+                        <p> challenging with trivia questions. </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                       
+                    <li><h3>I-Connect</h3>
+                        <p> Testing your memory event</p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                        
+                    <li><h3>Battle of Bids</h3>
+                        <p>Auction bids for fanatics </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                        
+                        <li><h3>Decode the Mystery</h3>
+                            <p>Mystrey of Frames  </p>
+                            <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                            <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+    
+                            
+                </ul>
+            </div>
+
+            <div id="tech-events" class="event-div">
+                <h2>Tech Events</h2>
+                <ul>
+                    <li><h3>Paper Presentation</h3>
+                        <p>  A competition of technical papers </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                       
+                    <li><h3>TechExpo</h3>
+                        <p>  A competition of Prototypes </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Room.no - 212</p>
+
+                        
+                    <li><h3>Quiz-O-Mania</h3>
+                        <p> challenging with trivia questions. </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                       
+                </ul>
+            </div>
+
+            <div id="nontech-events" class="event-div">
+                <h2>Non-Tech Events</h2>
+                <ul>
+                    <li><h3>I-Connect</h3>
+                        <p> Testing your memory event</p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                        
+                    <li><h3>Battle of Bids</h3>
+                        <p>Auction bids for fanatics </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                       
+                    <li><h3>Decode the Mystery</h3>
+                        <p>Mystrey of Frames  </p>
+                        <p><i class="fa-solid fa-clock"></i></i> Timing - 10.30 am to 12.00 pm </p>
+                        <p><i class="fa-solid fa-location-dot"></i> Place - Auditorium hall</p>
+
+                        
+                </ul>
+            </div>
+        </div>
+        <div class="Back">
+            <a href="index.html"><button>Back to home</button></a></div>
+        
+    </div>
+    <footer>
+        <div class="footer-container">
+            <!-- About Us -->
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Cognitron'25 is a premier tech symposium organized by the students of electronics and communication engineering,University College of Engineering, Ariyalur. Join us for an exciting experience filled with innovation and creativity.</p>
+                <p>By SAELCO</p>
+                <p>(students association of electronics and communication engineering)</p>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+               
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:cognitron25@email.com"><i class="fa-solid fa-envelope" target="blank"></i></a>
+
+                <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+    
+            <!-- Integrated Google Map -->
+            <div class="footer-map">
+                <h3>Find Us</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.769103340701!2d79.19693510997647!3d11.130566688994778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baad81dd8eb603d%3A0x9d34563b95e3e873!2sUniversity%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1743757353043!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cognitron'25. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="event.js"></script>
+</body>
+</html>
