@@ -131,6 +131,8 @@ footer {
     padding: 30px 15px;
     color: white;
     text-align: center;
+     height: 300px; /* <-- Fixed height */
+    overflow: auto;
 }
 
 .footer-container {
