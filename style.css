@@ -170,7 +170,9 @@ footer {
     margin-top: 20px;
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
 }
+
 
 /* Responsive Styling */
 @media (max-width: 1024px) {
