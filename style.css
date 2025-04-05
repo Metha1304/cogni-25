@@ -128,7 +128,7 @@ button:hover {
 
 footer {
     background: linear-gradient(to right, rgb(172, 6, 187), rgb(7, 136, 168));
-    padding: 30px 15px;
+    padding: 20px 10px;
     color: white;
     text-align: center;
      height: 200px; /* <-- Fixed height */
