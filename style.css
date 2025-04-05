@@ -1,4 +1,3 @@
-/* Base Styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -153,6 +152,9 @@ footer {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+.footer-container p{
+    font-size: 1rem;
+}
 
 .footer-social a {
     color: white;
@@ -201,7 +203,7 @@ footer {
 
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .nav-links {
@@ -236,12 +238,20 @@ footer {
     .overlay{
         margin-top:80px;
     }
+    .footer-container p{
+        font-size: 0.7rem;
+    }
+    
 }
 
 @media (max-width: 480px) {
     .logo {
         width: 60px;
         height: 60px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .header-text h1 {
@@ -277,7 +287,10 @@ footer {
     .footer-social a {
         font-size: 1.5rem;
     }
-
+    .footer-container p{
+        font-size: 0.5rem;
+    }
+    
     .footer-bottom {
         font-size: 0.9rem;
     }
