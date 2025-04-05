@@ -1,100 +1,85 @@
-body {
-    font-family: 'Poppins', sans-serif;
+/* Base Styling */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url(background.jpg);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
     color: white;
     width: 100%;
+    overflow-x: hidden;
 }
 
-main {
-    margin-bottom: 50px;
-}
-
-.about {
-    padding: 10px;
-    background-image: linear-gradient(to right, rgb(172, 6, 187), rgb(7, 136, 168));
-    border-radius: 20px;
-    margin-top: 20px;
-}
-.image-container .overlay .date{
-    font-weight: 500;
-    font-size: 15px;
-}
 /* Header */
 .header-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to right, rgb(172, 6, 187), rgb(7, 136, 168));
     padding: 10px;
-    background-image: linear-gradient(to right, rgb(172, 6, 187), rgb(7, 136, 168));
-    flex-wrap: wrap;
     text-align: center;
 }
 
-/* Logo */
 .logo {
     width: 80px;
     height: 80px;
-    transition: all 0.3s ease;
+    object-fit: contain;
 }
 
-/* Header Text */
-.header-text {
-    text-align: center;
-}
-
-.header-text h1, .header-text h4, .header-text p {
+.header-text h1,
+.header-text h4,
+.header-text p {
     margin: 5px 0;
     color: white;
     font-weight: 600;
 }
 
-/* Navigation Bar */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 15px 20px;
-    background-image: linear-gradient(to right, rgb(172, 6, 187), rgb(7, 136, 168));
+    background: linear-gradient(to right, rgb(172, 6, 187), rgb(7, 136, 168));
     position: relative;
 }
 
-/* Navigation Links */
 .nav-links {
-    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    list-style: none;
+    gap: 20px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    margin: 0 15px;
     font-size: 1rem;
-    transition: color 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
     color: #020c22;
 }
 
-/* Burger Menu */
 .burger {
     display: none;
+    flex-direction: column;
     cursor: pointer;
 }
 
 .burger div {
     width: 30px;
     height: 3px;
-    background-color: white;
+    background: white;
     margin: 5px;
     transition: all 0.3s ease;
 }
 
-/* Image Container */
+/* Hero Section */
 .image-container {
     position: relative;
     width: 100%;
@@ -108,58 +93,60 @@ main {
     object-fit: cover;
 }
 
-/* Overlay */
 .overlay {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     width: 90%;
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 110px;
+    text-align: center;
+    margin-top: 80px;
 }
 
-/* Buttons */
+.overlay p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
 button {
     padding: 10px 20px;
     margin: 10px;
+    background: linear-gradient(to right, rgb(224, 21, 243), rgb(24, 186, 226));
     border: none;
-    background-image: linear-gradient(to right, rgb(224, 21, 243), rgb(24, 186, 226));
-    color: white;
-    font-size: 16px;
     border-radius: 50px;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button:hover {
-    background-image: linear-gradient(to right, rgb(110, 4, 119), rgb(3, 80, 99));
     transform: scale(1.05);
+    background: linear-gradient(to right, rgb(110, 4, 119), rgb(3, 80, 99));
     box-shadow: 0 0 15px rgba(203, 38, 218, 0.6), 0 0 30px rgba(0, 168, 234, 0.4);
 }
 
 /* Footer */
 footer {
-    background-image: linear-gradient(to right, rgb(172, 6, 187), rgb(7, 136, 168));
+    background: linear-gradient(to right, rgb(172, 6, 187), rgb(7, 136, 168));
+    padding: 30px 15px;
     color: white;
     text-align: center;
-    padding: 20px 10px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    text-align: center;
-    padding-bottom: 20px;
+    gap: 20px;
 }
 
-.footer-about, .footer-social, .footer-map {
+.footer-about,
+.footer-social,
+.footer-map {
     flex: 1;
-    min-width: 250px;
-    margin: 10px;
+    min-width: 260px;
 }
 
 .footer-container h3 {
@@ -167,7 +154,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Social Media Links */
 .footer-social a {
     color: white;
     font-size: 1.8rem;
@@ -180,18 +166,20 @@ footer {
     color: #000308;
 }
 
-/* Footer Bottom */
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
     padding-top: 10px;
-    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* ✅ Mobile Responsiveness */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .header-text h1 {
+        font-size: 22px;
+    }
+
+    .overlay p {
+        font-size: 0.95rem;
     }
 
     .logo {
@@ -199,120 +187,85 @@ footer {
         height: 70px;
     }
 
-    /* Hide Navigation Links */
+    .overlay {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        text-align: center;
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        text-align: center;
         padding: 10px 0;
         z-index: 1000;
     }
 
-    /* Show when Active */
     .nav-links.active {
         display: flex;
     }
 
-    /* Display Burger Menu */
     .burger {
-        display: block;
-    }
-
-    .burger div {
-        width: 25px;
-        height: 3px;
-    }
-
-    /* Responsive Footer */
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-about, .footer-social, .footer-map {
-        margin-bottom: 20px;
-    }
-
-    /* Adjust Overlay */
-    .overlay {
-        width: 95%;
-        top: 55%;
+        display: flex;
     }
 
     button {
-        font-size: 14px;
+        font-size: 0.95rem;
         padding: 8px 15px;
     }
-}
-@media (max-width: 480px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 8px;
-    }
 
+    .image-container {
+        height: 320px;
+    }
+    .overlay{
+        margin-top:80px;
+    }
+}
+
+@media (max-width: 480px) {
     .logo {
         width: 60px;
         height: 60px;
     }
-    h1{
-        font-size: 17px;
+
+    .header-text h1 {
+        font-size: 18px;
     }
-    h4,p{
+
+    .header-text h4,
+    .header-text p,
+    .overlay p {
         font-size: 14px;
-    }
-    .overlay{
-        margin-top: 80px;
-    }
-    /* Adjust Navigation */
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        padding: 8px 0;
-    }
-
-    .nav-links a {
-        font-size: 0.9rem;
-        margin: 5px 0;
-    }
-
-    .burger div {
-        width: 22px;
-        height: 2.5px;
-    }
-
-    /* Image Section */
-    .image-container {
-        height: 300px;
     }
 
     .overlay {
-        width: 95%;
-        top: 50%;
-        font-size: 14px;
+        margin-top: 80px;
+        padding: 10px;
+        font-size: 13px;
     }
 
-    /* Buttons */
     button {
         font-size: 13px;
-        padding: 7px 12px;
+        padding: 6px 12px;
     }
 
-    /* Footer */
     .footer-container {
         flex-direction: column;
-        text-align: center;
-        padding: 15px 5px;
-    }
-
-    .footer-about, .footer-social, .footer-map {
-        min-width: auto;
-        margin-bottom: 15px;
+        gap: 10px;
     }
 
     .footer-container h3 {
@@ -321,10 +274,8 @@ footer {
 
     .footer-social a {
         font-size: 1.5rem;
-        margin: 0 5px;
     }
 
-    /* Footer Bottom */
     .footer-bottom {
         font-size: 0.9rem;
     }
